@@ -54,7 +54,7 @@ export default function Home() {
       <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white overflow-x-hidden">
         <HeroSection currentSkill={currentSkill} skills={skills} />
         <SkillsSection skills={skills} isVisible={isVisible} />
-        <ProjectsSection isVisible={isVisible} />
+        {/* <ProjectsSection isVisible={isVisible} /> */}
         <ExperienceSection isVisible={isVisible} />
         <EducationSection isVisible={isVisible} />
         <ContactSection isVisible={isVisible} />
