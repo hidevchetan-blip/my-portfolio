@@ -1,5 +1,5 @@
-import React from 'react';
-import { ChevronDown, Code } from 'lucide-react';
+import React from "react";
+import { ChevronDown, Code, Mail, Phone } from "lucide-react";
 
 const HeroSection = ({ currentSkill, skills }) => {
   return (
@@ -13,33 +13,47 @@ const HeroSection = ({ currentSkill, skills }) => {
                 Chetan Chauhan
               </h1>
               <div className="text-xl lg:text-2xl mb-8 h-20">
-                <span className="text-gray-300">Software Engineer specializing in </span>
+                <span className="text-gray-300">
+                  Software Engineer specializing in{" "}
+                </span>
                 <div className="inline-block">
-                  <span className={`font-semibold bg-gradient-to-r ${skills[currentSkill]?.color} bg-clip-text text-transparent transition-all duration-500`}>
+                  <span
+                    className={`font-semibold bg-gradient-to-r ${skills[currentSkill]?.color} bg-clip-text text-transparent transition-all duration-500`}
+                  >
                     {skills[currentSkill]?.category}
                   </span>
                 </div>
               </div>
               <p className="text-gray-300 text-lg mb-8 max-w-lg">
-                4+ years of experience crafting modern web applications with React, Next.js, and cutting-edge technologies. 
-                Passionate about creating seamless user experiences and scalable solutions.
+                4+ years of experience crafting modern web applications with
+                React, Next.js, and cutting-edge technologies. Passionate about
+                creating seamless user experiences and scalable solutions.
               </p>
               <div className="flex space-x-4">
-                <button className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 px-8 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+                {/* <button className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 px-8 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
                   View My Work
-                </button>
-                <button className="border border-white/30 hover:border-white/60 px-8 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 backdrop-blur-sm">
-                  Contact Me
-                </button>
+                </button> */}
+               <div className="flex items-center space-x-4">
+                  <Mail className="text-blue-400" size={20} />
+                  <span className="text-gray-300">chetanrajputsm@gmail.com</span>
+                </div>
+                <div className="flex items-center space-x-4">
+                  <Phone className="text-green-400" size={20} />
+                  <span className="text-gray-300">+91-7011626365</span>
+                </div>
               </div>
             </div>
           </div>
           <div className="lg:w-1/2 flex justify-center">
             <div className="relative">
-              <div className="w-80 h-80 rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 p-1 animate-spin-slow">
+              <div className=" w-80 h-80 rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 p-1 ">
                 <div className="w-full h-full rounded-full bg-slate-900 flex items-center justify-center">
-                  <div className="w-72 h-72 rounded-full bg-gradient-to-br from-gray-700 to-gray-800 flex items-center justify-center text-6xl font-bold">
-                    CC
+                  <div className="">
+                    <img
+                    style={{opacity:"90%"}}
+                      src={"/images/chetan_chauhan.png"}
+                      className="rounded-full w-72 h-72 rounded-full bg-gradient-to-br from-gray-700 to-gray-800 flex items-center justify-center text-6xl font-bold"
+                    />
                   </div>
                 </div>
               </div>
