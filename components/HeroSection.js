@@ -44,7 +44,7 @@ const HeroSection = ({ currentSkill, skills }) => {
               </div>
             </div>
           </div>
-          <div className="lg:w-1/2 flex justify-center">
+          {/* <div className="lg:w-1/2 flex justify-center">
             <div className="relative">
               <div className=" w-80 h-80 rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 p-1 ">
                 <div className="w-full h-full rounded-full bg-slate-900 flex items-center justify-center">
@@ -61,7 +61,7 @@ const HeroSection = ({ currentSkill, skills }) => {
                 <Code size={32} />
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
